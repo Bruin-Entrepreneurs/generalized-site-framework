@@ -1,6 +1,6 @@
 # Getting Started
-npm install 
-gatsby develop
+1. npm install 
+2. gatsby develop
 
 # Other Notes
 
