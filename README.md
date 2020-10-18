@@ -14,5 +14,4 @@
 ### Some design choices
 - Using react hooks: https://medium.com/@mateuszroth/react-hooks-advantages-and-comparison-to-older-reusable-logic-approaches-in-short-f424c9899cb5
 
-- Using styled components bc they're sick. Just look at the list of companies that follow suit
-  https://styled-components.com/
+- Using Styled Components because they make code super clean. Also sort of a cutting edge industry standard: https://styled-components.com/
