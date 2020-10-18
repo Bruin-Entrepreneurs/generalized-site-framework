@@ -1,0 +1,26 @@
+{
+  "name": "generic-site-framework",
+  "version": "1.0.0",
+  "description": "Framework for building BE sites",
+  "main": "index.js",
+  "dependencies": {
+    "gatsby": "^2.24.80",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruin-Entrepreneurs/generic-site-framework.git"
+  },
+  "author": "Cody Swain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruin-Entrepreneurs/generic-site-framework/issues"
+  },
+  "homepage": "https://github.com/Bruin-Entrepreneurs/generic-site-framework#readme"
+}

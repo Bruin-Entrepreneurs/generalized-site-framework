@@ -1,0 +1,11 @@
+html, body {
+  height: 100%; 
+  margin: 0;
+}
+
+/* I added these because I noticed gatsby added wrapper divs
+which affected how the child divs in /components inherited view height 
+Just inspect the page to view the wrappers that are added. */
+#___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+}
