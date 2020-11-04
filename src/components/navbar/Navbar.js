@@ -23,7 +23,8 @@ const Navbar = ({ titleText, subtitleText }) => {
 export default Navbar;
 
 const Logo = styled.img`
-  height: 50%;
+  height: 8vh;
+  width: 8vh;
   padding: 20px 3%;
   @media (max-width: 580px) {
     height: 7vh;
