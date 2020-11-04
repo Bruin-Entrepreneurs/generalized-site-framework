@@ -30,7 +30,7 @@ const CardSection = (props) => {
 
     return (
         <SectionComponents.SectionWrapper>
-            <SectionComponents.SectionDivider />
+            <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
             <SectionComponents.TitleDiv>
                 {props.title}
             </SectionComponents.TitleDiv>
@@ -40,6 +40,12 @@ const CardSection = (props) => {
         </SectionComponents.SectionWrapper>
         
     )
+}
+
+CardSection.propTypes = {
+    title: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired,  // this is a card with properties: image, title, subtitle
+    dividerColor: PropTypes.string.isRequired
 }
 
 const CardSectionWrapper = styled.div`
@@ -98,9 +104,5 @@ const CardSubtitle = styled.div`
     }
 `
 
-CardSection.propTypes = {
-    title: PropTypes.string.isRequired,
-    cards: PropTypes.array.isRequired,  // this is a card with properties: image, title, subtitle
-}
 
 export default CardSection;

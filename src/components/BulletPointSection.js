@@ -15,7 +15,7 @@ const BulletPointSection = (props) => {
 
     return (
         <SectionComponents.SectionWrapper>
-            <SectionComponents.SectionDivider />
+            <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
             <SectionComponents.TitleDiv>
                 {props.title}
             </SectionComponents.TitleDiv>
@@ -27,9 +27,6 @@ const BulletPointSection = (props) => {
 }
 
 const BulletPointWrapper = styled.ul`
-    
-    
-    
 `
 
 const BulletPointItem = styled.li`
@@ -40,7 +37,8 @@ const BulletPointItem = styled.li`
 
 BulletPointSection.propTypes = {
     title: PropTypes.string.isRequired,
-    points: PropTypes.array.isRequired
+    points: PropTypes.array.isRequired,
+    dividerColor: PropTypes.string.isRequired
 }
 
 export default BulletPointSection;

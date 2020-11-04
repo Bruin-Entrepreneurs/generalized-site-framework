@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import styled from 'styled-components'
 import { Element } from 'react-scroll';
 
@@ -7,7 +7,7 @@ import '../main.css'
 
 import backgroundImage from '../assets/background.png'
 import Navbar from '../components/navbar/Navbar';
-import Title from '../components/Title';
+import TitleWithButton from '../components/TitleWithButton';
 import TextSection from '../components/TextSection';
 import BulletPointSection from '../components/BulletPointSection';
 import CardSection from '../components/CardSection';
@@ -134,18 +134,73 @@ const App = () => {
     <BackgroundContainer>
       <ContentContainer>
         <Navbar />
-        <Title titleText={title} subtitleText={subtitle} descriptionText={description} buttonText={buttonText} />
+        <TitleWithButton 
+          titleText={title} 
+          subtitleText={subtitle} 
+          descriptionText={description} 
+          buttonText={buttonText} 
+          titleColor="#EE4C7D"
+          subtitleColor="#ED9CB5"
+          buttonColor="#EE4C7D"
+          buttonTextColor="#EDEDEE"
+        />
         <Element name="program" />
-        <TextSection id="program" title="What is Startup Labs?" text={startupLabsDescription} />        
-        <BulletPointSection title="Program Details" points={bulletPoints} />
-        <Element name="companies" />
-        <CardSection id="companies" title="Notable Alumni" cards={alumni} />        
-        <ImageFlexboxSection title="Where Our Companies Go" height="20vh" width="50%" mobileHeight="12vh" mobileWidth="50%" images={accelerators} />
+        <TextSection 
+          id="program" 
+          title="What is Startup Labs?"
+          text={startupLabsDescription} 
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
+        />        
+        <BulletPointSection 
+          title="Program Details" 
+          points={bulletPoints} 
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
+        />
+        <Element 
+          name="companies" 
+        />
+        <CardSection 
+          id="companies" 
+          title="Notable Alumni" 
+          cards={alumni}
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
+        />        
+        <ImageFlexboxSection 
+          title="Where Our Companies Go" 
+          height="20vh" width="50%" 
+          mobileHeight="12vh" 
+          mobileWidth="50%"
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
+          images={accelerators} 
+        />
         <Element name="mentors" />        
-        <CardSection id="mentors" title="Mentors and VCs" cards={mentors} />
-        <Element name="partners" />
-        <ImageFlexboxSection id="partners" title="Partners" height="16vh" width="25%" mobileHeight="12vh" mobileWidth="50%" images={partners} />
-        <FooterSection logo={SLLogoPic} initiative="Startup Labs" contributors={contributors} contacts={contacts} socials={socials} />
+        <CardSection 
+          id="mentors" 
+          title="Mentors and VCs" 
+          cards={mentors}
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
+        />
+        <Element 
+          name="partners" 
+        />
+        <ImageFlexboxSection 
+          id="partners" 
+          title="Partners" 
+          height="16vh" 
+          width="25%" 
+          mobileHeight="12vh" 
+          mobileWidth="50%"
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
+          images={partners} 
+        />
+        <FooterSection 
+          logo={SLLogoPic} 
+          initiative="Startup Labs" 
+          contributors={contributors} 
+          contacts={contacts} 
+          socials={socials}
+          titleTextColor="#EE4C7D"
+        />
       </ContentContainer>
     </BackgroundContainer>
   )

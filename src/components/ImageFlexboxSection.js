@@ -15,7 +15,7 @@ const ImageFlexboxSection = (props) => {
 
     return (
         <SectionComponents.SectionWrapper>
-            <SectionComponents.SectionDivider />
+            <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
             <SectionComponents.TitleDiv>
                 {props.title}
             </SectionComponents.TitleDiv>
@@ -33,7 +33,8 @@ ImageFlexboxSection.propTypes = {
     height: PropTypes.string.isRequired, // specify the height and width of the images
     width: PropTypes.string.isRequired,
     mobileHeight: PropTypes.string.isRequired,
-    mobileWidth: PropTypes.string.isRequired
+    mobileWidth: PropTypes.string.isRequired,
+    dividerColor: PropTypes.string.isRequired
 }
 
 const ImageBoxWrapper = styled.div`

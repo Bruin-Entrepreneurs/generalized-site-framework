@@ -21,15 +21,15 @@ const FooterSection = (props) => {
                     <InitiativeLogo src={props.logo} />
                 </RowItemWrapper>
                 <RowItemWrapper>
-                    <Title>{props.initiative}</Title>
+                    <Title color={props.titleTextColor} >{props.initiative}</Title>
                     { mapToLines(props.contributors) }
                 </RowItemWrapper>
                 <RowItemWrapper>
-                    <Title>Contact</Title>
+                    <Title color={props.titleTextColor} >Contact</Title>
                     { mapToLines(props.contacts) }
                 </RowItemWrapper>
                 <RowItemWrapper>
-                    <Title>Social Media</Title>
+                    <Title color={props.titleTextColor} >Social Media</Title>
                     { mapToLines(props.socials) }
                 </RowItemWrapper>
             </Row>
@@ -42,7 +42,8 @@ FooterSection.propTypes = {
     initiative: PropTypes.string.isRequired,
     contributors: PropTypes.array.isRequired,
     contacts: PropTypes.array.isRequired,
-    socials: PropTypes.array.isRequired
+    socials: PropTypes.array.isRequired,
+    titleTextColor: PropTypes.array.isRequired
 }
 
 const Row = styled.div`
@@ -71,13 +72,18 @@ const RowItemWrapper = styled.div`
 const InitiativeLogo = styled.img`    
 `
 
+//#EE4C7D;
 const Title = styled.div`
     font-size: 1.8rem;
-    color: #EE4C7D;
+    color: ${props => props.color};
     @media(max-width: 800px) {
         font-size: 3rem;
     }
 `
+
+Title.propTypes = {
+    color: PropTypes.string.isRequired
+}
 
 const TextLine = styled.div`
     font-size: .8rem;

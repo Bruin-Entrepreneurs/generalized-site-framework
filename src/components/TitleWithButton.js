@@ -2,45 +2,49 @@ import styled from 'styled-components';
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ titleText, subtitleText, descriptionText, buttonText }) => {
+const TitleWithButton = (props) => {
   return(
     <TitleContainer>
       <Row style={{paddingTop: "10vh"}}>
         <PageOffset />
-        <TitleTextContainer>
-          {titleText}
+        <TitleTextContainer color={props.titleColor} >
+          {props.titleText}
         </TitleTextContainer>      
       </Row>
       <Row>
         <PageOffset />
-        <SubtitleTextContainer>
-          {subtitleText}
+        <SubtitleTextContainer color={props.subtitleColor} >
+          {props.subtitleText}
         </SubtitleTextContainer>
       </Row>
       <Row>
         <PageOffset />
         <DescriptionContainer>
-          {descriptionText}
+          {props.descriptionText}
         </DescriptionContainer>
       </Row>
       <Row>
         <PageOffset />
         <SubmitButtonContainer action="#">
-          <SubmitButton type="submit" value={buttonText} />
+          <SubmitButton type="submit" value={props.buttonText} color={props.buttonTextColor} backgroundColor={props.buttonColor} />
         </SubmitButtonContainer>
       </Row>
     </TitleContainer>
   )
 }
 
-Title.propTypes = {
+TitleWithButton.propTypes = {
   titleText: PropTypes.string.isRequired,
   subtitleText: PropTypes.string.isRequired,
   descriptionText: PropTypes.string.isRequired,
-  buttonText: PropTypes.string.isRequired
+  buttonText: PropTypes.string.isRequired,
+  titleColor: PropTypes.string.isRequired,
+  subtitleColor: PropTypes.string.isRequired,
+  buttonColor: PropTypes.string.isRequired,
+  buttonTextColor: PropTypes.string.isRequired
 }
 
-export default Title;
+export default TitleWithButton;
 
 const Row = styled.div`
   display: flex;
@@ -55,36 +59,36 @@ const PageOffset = styled.div`
   @media (max-width: 600px) {
     width: 10vw;
   }
-
 `
 
-const Col = styled.div`
-  display: flex;
-  flex-direction: column;
-`
 
 const TitleContainer = styled.div`
-  // background: green;
   width: 100vw;
   height: 80vh;
   font-weight: 900;
 `
 
+// #EE4C7D
 const TitleTextContainer = styled.div`
   font-size: 6rem;
-  color: #EE4C7D;
+  color: ${props => props.color};
   font-family: 'Barlow Semi Condensed';
-
-  // @media (max-width: 500px) {
-    // text-align: center;
-  // }
 `
 
+TitleTextContainer.propTypes = {
+  color: PropTypes.string.isRequired
+}
+
+// #ED9CB5
 const SubtitleTextContainer = styled.div`
   font-size: 2.5rem;
   font-weight: 900;
-  color: #ED9CB5;
+  color: ${props => props.color};
 `
+
+SubtitleTextContainer.propTypes = {
+  color: PropTypes.string.isRequired
+}
 
 const DescriptionContainer = styled.div`
   font-size: 1.5rem;
@@ -96,10 +100,12 @@ const SubmitButtonContainer = styled.form`
   padding-top: 5vh;
   
 `
+// bg: #EE4C7D
+// color: #EDEDEE
 
 const SubmitButton = styled.input`
-  background-color: #EE4C7D;
-  color: #EDEDEE;
+  background-color: ${props => props.backgroundColor};
+  color: ${props => props.color};
   border-style: hidden;
   border-radius: 3rem;  
   height: 6vh;
@@ -107,6 +113,10 @@ const SubmitButton = styled.input`
   @media (max-width: 600px) {
     width: 60vw;
   }
-
 `
+
+SubmitButton.propTypes = {
+  color: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string.isRequired
+}
 
