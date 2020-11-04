@@ -5,6 +5,7 @@ import NavbarLink from './NavbarLink';
 import LogoPNG from '../../assets/be.png';
 
 const Navbar = ({ titleText, subtitleText }) => {
+  
   return(
     <NavbarContainer>
       {titleText}
@@ -12,8 +13,8 @@ const Navbar = ({ titleText, subtitleText }) => {
       <Logo src={LogoPNG} />
       <NavbarLink href="#" title="Program" />
       <NavbarLink href="#" title="Companies" />
-      <NavbarLink href="#" title="Mentors & VCs" />
-      <NavbarLink href="#" title="Partners" />
+      <NavbarLink href="#mentors" title="Mentors & VCs" />
+      <NavbarLink href="#partners" title="Partners" />
       <NavbarLink href="#" title="Application" />
     </NavbarContainer>
   )

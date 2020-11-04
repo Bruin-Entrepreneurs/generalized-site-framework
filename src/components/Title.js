@@ -66,13 +66,14 @@ const Col = styled.div`
 const TitleContainer = styled.div`
   // background: green;
   width: 100vw;
-  height: 100%;
+  height: 80vh;
   font-weight: 900;
 `
 
 const TitleTextContainer = styled.div`
   font-size: 6rem;
   color: #EE4C7D;
+  font-family: 'Barlow Semi Condensed';
 
   // @media (max-width: 500px) {
     // text-align: center;
