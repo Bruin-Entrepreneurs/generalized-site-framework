@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
 
 const NavbarLink = ({ href, title }) => {
     return (
         <LinkContainer>
-            <LinkElement href={href} >                
-                {title}                
-            </LinkElement>
+            <Link to={href} smooth={true} duration={500}>
+                <LinkElement>
+                    {title}                
+                </LinkElement>
+            </Link>
         </LinkContainer>
     );
 }
@@ -26,11 +29,11 @@ const LinkContainer = styled.div`
     padding: 20px 3%;
 `
 
-const LinkElement = styled.a`
+const LinkElement = styled.div`
     color: #12283D;
-    font-size: 1rem;
-    text-decoration: none;
+    font-size: 1rem;    
     min-height: 10px;
+    cursor: pointer;
 `
 
 export default NavbarLink;

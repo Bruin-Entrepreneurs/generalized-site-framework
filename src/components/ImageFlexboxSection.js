@@ -31,7 +31,9 @@ ImageFlexboxSection.propTypes = {
     title: PropTypes.string.isRequired,
     images: PropTypes.array.isRequired,
     height: PropTypes.string.isRequired, // specify the height and width of the images
-    width: PropTypes.string.isRequired
+    width: PropTypes.string.isRequired,
+    mobileHeight: PropTypes.string.isRequired,
+    mobileWidth: PropTypes.string.isRequired
 }
 
 const ImageBoxWrapper = styled.div`
@@ -40,9 +42,11 @@ const ImageBoxWrapper = styled.div`
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    justify-content: center;
+    justify-content: space-evenly;
+    
     @media(max-width: 800px) {
         flex-direction: column;
+        justify-content: center;
     }
 `
 
@@ -54,10 +58,9 @@ const ImageItemBox = styled.div`
     height: ${props => props.height};
     width: ${props => props.width};
     @media(max-width: 800px) {
-        width: 80%;
-        margin: 0.5rem auto;
-        
-        
+        width: ${props => props.mobileWidth};
+        width: ${props => props.mobileWidth};
+        margin: 0.5rem auto;        
     }
 `
 

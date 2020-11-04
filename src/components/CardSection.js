@@ -6,13 +6,26 @@ import * as SectionComponents from './section-components/SectionComponents';
 
 const CardSection = (props) => {
     const renderCards = () => {
-        return props.cards.map((value, index) => (
-            <Card key={index}>
-                <CardImage src={value.image}/>
-                <CardTitle>{value.title}</CardTitle>
-                <CardSubtitle>{value.subtitle}</CardSubtitle>
-            </Card>
-        ));
+        if (props.cards[0]['link']) { 
+            return props.cards.map((value, index) => (
+                <Card key={index}>
+                    <CardLink href={value.link}>
+                        <CardImage src={value.image}/>
+                    </CardLink>
+                    <CardTitle>{value.title}</CardTitle>
+                    <CardSubtitle>{value.subtitle}</CardSubtitle>
+                </Card>
+            ));    
+
+        } else {
+            return props.cards.map((value, index) => (
+                <Card key={index}>
+                    <CardImage src={value.image}/>
+                    <CardTitle>{value.title}</CardTitle>
+                    <CardSubtitle>{value.subtitle}</CardSubtitle>
+                </Card>
+            ));    
+        }
     }
 
     return (
@@ -50,10 +63,16 @@ const Card = styled.div`
     }
 `
 
+const CardLink = styled.a`
+    width: 100%;
+    text-align: center;
+`
+
 const CardImage = styled.img`
     margin-left: auto;
     margin-right: auto;
-
+    padding-left: auto;
+    padding-right: auto;
     @media(max-width: 500px) {
         width: 80%;
     }
@@ -73,7 +92,7 @@ const CardSubtitle = styled.div`
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5rem;
-
+    text-align: center;
     @media(max-width: 500px) {
         font-size: 1rem;
     }

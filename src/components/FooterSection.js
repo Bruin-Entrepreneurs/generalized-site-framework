@@ -83,7 +83,8 @@ const TextLine = styled.div`
     font-size: .8rem;
     line-height: 250%;
     @media(max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1rem;
+        word-break: break-all;
     }
 `
 

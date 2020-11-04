@@ -1,6 +1,9 @@
 import React, { useRef } from "react"
-import '../main.css'
 import styled from 'styled-components'
+import { Element } from 'react-scroll';
+
+import '../main.css'
+
 
 import backgroundImage from '../assets/background.png'
 import Navbar from '../components/navbar/Navbar';
@@ -73,10 +76,10 @@ const App = () => {
   ];
 
   const alumni = [
-    {title: 'Duffl', subtitle: 'description', image: DufflPic},
-    {title: 'Sike Insights', subtitle: 'description', image: SikePic},
-    {title: 'Charipay', subtitle: 'description', image: CharipayPic},
-    {title: 'Playfull', subtitle: 'description', image: PlayfullPic}
+    {title: 'Duffl', subtitle: 'Connecting video game players with real life awards.', image: DufflPic, link: "https://playfull.com/"},
+    {title: 'Sike Insights', subtitle: 'Utilizing cutting edge AI and psychology research to bridge the gaps between individuals on remote teams.', image: SikePic, link: "https://sikeinsights.com/"},
+    {title: 'Charipay', subtitle: 'Developing a hyperlocalized platform on which students can purchase snacks and goods.', image: CharipayPic, link: "https://www.duffl.com/"},
+    {title: 'Playfull', subtitle: 'Building a more conducive platform for charitable actions.', image: PlayfullPic, link: "www.charipay.org"}
   ]
 
   const accelerators = [
@@ -132,12 +135,16 @@ const App = () => {
       <ContentContainer>
         <Navbar />
         <Title titleText={title} subtitleText={subtitle} descriptionText={description} buttonText={buttonText} />
-        <TextSection id="program" title="What is Startup Labs?" text={startupLabsDescription} />
+        <Element name="program" />
+        <TextSection id="program" title="What is Startup Labs?" text={startupLabsDescription} />        
         <BulletPointSection title="Program Details" points={bulletPoints} />
-        <CardSection id="companies" title="Notable Alumni" cards={alumni} />
-        <ImageFlexboxSection title="Where Our Companies Go" height="20vh" width="50%" images={accelerators} />
+        <Element name="companies" />
+        <CardSection id="companies" title="Notable Alumni" cards={alumni} />        
+        <ImageFlexboxSection title="Where Our Companies Go" height="20vh" width="50%" mobileHeight="12vh" mobileWidth="50%" images={accelerators} />
+        <Element name="mentors" />        
         <CardSection id="mentors" title="Mentors and VCs" cards={mentors} />
-        <ImageFlexboxSection id="partners" title="Partners" height="16vh" width="25%" images={partners} />
+        <Element name="partners" />
+        <ImageFlexboxSection id="partners" title="Partners" height="16vh" width="25%" mobileHeight="12vh" mobileWidth="50%" images={partners} />
         <FooterSection logo={SLLogoPic} initiative="Startup Labs" contributors={contributors} contacts={contacts} socials={socials} />
       </ContentContainer>
     </BackgroundContainer>

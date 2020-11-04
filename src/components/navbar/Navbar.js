@@ -11,10 +11,10 @@ const Navbar = ({ titleText, subtitleText }) => {
       {titleText}
       {subtitleText}
       <Logo src={LogoPNG} />
-      <NavbarLink href="#" title="Program" />
-      <NavbarLink href="#" title="Companies" />
-      <NavbarLink href="#mentors" title="Mentors & VCs" />
-      <NavbarLink href="#partners" title="Partners" />
+      <NavbarLink href="programs" title="Program" />
+      <NavbarLink href="companies" title="Companies" />
+      <NavbarLink href="mentors" title="Mentors & VCs" />
+      <NavbarLink href="partners" title="Partners" />
       <NavbarLink href="#" title="Application" />
     </NavbarContainer>
   )
@@ -26,7 +26,8 @@ const Logo = styled.img`
   height: 50%;
   padding: 20px 3%;
   @media (max-width: 580px) {
-    height: 75%;
+    height: 7vh;
+    width: 7vh;
     padding-left: 40%;
     padding-right: 40%;
   }
