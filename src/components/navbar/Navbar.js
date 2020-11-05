@@ -26,6 +26,14 @@ const Logo = styled.img`
   height: 8vh;
   width: 8vh;
   padding: 20px 3%;
+
+  @media screen and (max-device-width: 480px) and (orientation:portrait) {
+    height: 7vh;
+    width: 7vh;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+
   @media (max-width: 580px) {
     height: 7vh;
     width: 7vh;
@@ -42,7 +50,13 @@ const NavbarContainer = styled.div`
   flex-wrap: wrap;
   padding-bottom: 1rem;
 
-  @media (max-width: 580px) {
+  @media screen and (max-device-width: 480px) and (orientation:portrait) {
+    justify-content: center;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  @media (max-width: 800px) {
     justify-content: center;
     padding-left: auto;
     padding-right: auto;

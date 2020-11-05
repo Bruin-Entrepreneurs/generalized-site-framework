@@ -53,7 +53,11 @@ const Row = styled.div`
     display: flex;
     flex-direction: row;
 
-    @media(max-width: 800px) {
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 1000px) {
         flex-direction: column;
     }
 `
@@ -61,7 +65,13 @@ const Row = styled.div`
 const RowItemWrapper = styled.div`
     width: 25%;
     height: 100%;
-    @media(max-width: 800px) {
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+    @media(max-width: 1000px) {
         width: 100%;
         height: auto;
         text-align: center;
@@ -76,7 +86,12 @@ const InitiativeLogo = styled.img`
 const Title = styled.div`
     font-size: 1.8rem;
     color: ${props => props.color};
-    @media(max-width: 800px) {
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        font-size: 3rem;
+    }
+
+    @media(max-width: 1000px) {
         font-size: 3rem;
     }
 `
@@ -88,7 +103,13 @@ Title.propTypes = {
 const TextLine = styled.div`
     font-size: .8rem;
     line-height: 250%;
-    @media(max-width: 800px) {
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+
+    @media(max-width: 1000px) {
         font-size: 1rem;
         word-break: break-all;
     }

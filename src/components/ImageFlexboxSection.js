@@ -44,6 +44,11 @@ const ImageBoxWrapper = styled.div`
     width: 100%;
     height: auto;
     justify-content: space-evenly;
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        flex-direction: column;
+        justify-content: center;        
+    }
     
     @media(max-width: 800px) {
         flex-direction: column;
@@ -58,6 +63,13 @@ const ImageItemBox = styled.div`
 
     height: ${props => props.height};
     width: ${props => props.width};
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        width: ${props => props.mobileWidth};
+        width: ${props => props.mobileWidth};
+        margin: 0.5rem auto;        
+    }
+
     @media(max-width: 800px) {
         width: ${props => props.mobileWidth};
         width: ${props => props.mobileWidth};
@@ -69,6 +81,11 @@ const ImageItem = styled.img`
     height: 90%;
     width: 90%;
     margin: auto auto;
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        width: 100%;
+        padding-top: 5rem;
+    }
     @media(max-width: 800px) {
         width: 100%;
         padding-top: 5rem;

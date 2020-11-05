@@ -64,6 +64,10 @@ const Card = styled.div`
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        width: 50%;
+    }
+
     @media(max-width: 1000px) {
         width: 50%;
     }
@@ -79,6 +83,11 @@ const CardImage = styled.img`
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        width: 80%;
+    }
+    
     @media(max-width: 500px) {
         width: 80%;
     }
@@ -89,6 +98,9 @@ const CardTitle = styled.div`
     margin-right: auto;
     font-size: 2rem;
 
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        font-size: 1.5rem;
+    }
     @media(max-width: 500px) {
         font-size: 1.5rem;
     }
@@ -99,6 +111,11 @@ const CardSubtitle = styled.div`
     margin-right: auto;
     font-size: 1.5rem;
     text-align: center;
+
+    @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        font-size: 1rem;
+    }
+
     @media(max-width: 500px) {
         font-size: 1rem;
     }

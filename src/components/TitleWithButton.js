@@ -59,6 +59,10 @@ const PageOffset = styled.div`
   @media (max-width: 600px) {
     width: 10vw;
   }
+
+  @media screen and (max-device-width: 480px) and (orientation:portrait) {
+    width: 10vw;
+  }
 `
 
 
@@ -111,6 +115,10 @@ const SubmitButton = styled.input`
   height: 6vh;
   width: 40vw;
   @media (max-width: 600px) {
+    width: 60vw;
+  }
+
+  @media screen and (max-device-width: 480px) and (orientation:portrait) {
     width: 60vw;
   }
 `
