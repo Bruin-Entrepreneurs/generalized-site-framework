@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "gatsby build"
   },
   "repository": {
     "type": "git",
