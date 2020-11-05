@@ -14,7 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "test",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "heroku-postbuild": "gatsby build"
   },
   "repository": {
     "type": "git",
