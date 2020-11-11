@@ -143,9 +143,11 @@ const App = () => {
 
   return (
     <BackgroundContainer>
-      <Helmet>
-        <link rel="icon" href={SLLogoPic} />
-      </Helmet>
+      <Helmet
+        link={[
+          { rel: 'shortcut icon', type: 'image/png', href: SLLogoPic }
+        ]}
+      />
       <ContentContainer>
         <Navbar 
           logo={BEPic}
