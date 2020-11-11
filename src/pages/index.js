@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import { Element } from 'react-scroll';
+import Helmet from 'react-helmet';
 
 import '../main.css'
 
@@ -53,10 +54,20 @@ import SLLogoPic from '../assets/sl_logo.png';
 
 
 const App = () => {
+
+  const NavItems = [
+    {text: "Program", href: "program", internal: true},
+    {text: "Companies", href: "companies", internal: true},
+    {text: "Mentors & VCs", href: "mentors", internal: true},
+    {text: "Partners", href: "partners", internal: true},
+    {text: "Application", href: "https://form.jotform.com/93287031393156", internal: false},
+  ]
+
+
   const title = 'STARTUP LABS'
   const subtitle = 'BRUIN ENTREPRENEURS'
   const description = 'UCLA\'s Premier Student-Run Accelerator Program'
-  const buttonText = 'uber for cbd shops isn\'t original'
+  const buttonText = 'Applications are due November 20th'
   const startupLabsDescription = "Startup Labs is an in-house pre-accelerator program hosted annually by UCLA’s premier entrepreneurship organization, Bruin Entrepreneurs."
   + "Our platform has already launched numerous startups to the next level, with many joining well-acclaimed accelerator programs and securing venture funding."
   + "At Startup Labs, our team selects candidates based on their ingenuity, intelligence, and willingness to strive for success. Over a twelve-week period, we help our founders grow their startups by providing them with mentorship, virtual working spaces, valuable connections, and any other resources they need. "
@@ -132,8 +143,14 @@ const App = () => {
 
   return (
     <BackgroundContainer>
+      <Helmet>
+        <link rel="icon" href={SLLogoPic} />
+      </Helmet>
       <ContentContainer>
-        <Navbar />
+        <Navbar 
+          logo={BEPic}
+          navItems={NavItems}
+        />
         <TitleWithButton 
           titleText={title} 
           subtitleText={subtitle} 

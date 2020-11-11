@@ -25,7 +25,7 @@ const TitleWithButton = (props) => {
       </Row>
       <Row>
         <PageOffset />
-        <SubmitButtonContainer action="#">
+        <SubmitButtonContainer target="_blank" action="https://form.jotform.com/93287031393156" >
           <SubmitButton type="submit" value={props.buttonText} color={props.buttonTextColor} backgroundColor={props.buttonColor} />
         </SubmitButtonContainer>
       </Row>
@@ -114,6 +114,7 @@ const SubmitButton = styled.input`
   border-radius: 3rem;  
   height: 6vh;
   width: 40vw;
+  cursor: pointer; 
   @media (max-width: 600px) {
     width: 60vw;
   }

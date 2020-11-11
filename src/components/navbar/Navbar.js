@@ -1,23 +1,32 @@
-import styled from 'styled-components'
-import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import NavbarLink from './NavbarLink';
-import LogoPNG from '../../assets/be.png';
 
-const Navbar = ({ titleText, subtitleText }) => {
+const Navbar = (props) => {
+
+  const mapPropsToNavItems = () => {
+    return props.navItems.map((value, index) => {
+      if (value.internal) {
+        return <NavbarLink href={value.href} title={value.text} internal={value.internal} />
+      } else {
+        return <NavbarLink target="_blank" href={value.href} title={value.text} internal={value.internal} />
+      }
+    });
+  }
   
   return(
     <NavbarContainer>
-      {titleText}
-      {subtitleText}
-      <Logo src={LogoPNG} />
-      <NavbarLink href="programs" title="Program" />
-      <NavbarLink href="companies" title="Companies" />
-      <NavbarLink href="mentors" title="Mentors & VCs" />
-      <NavbarLink href="partners" title="Partners" />
-      <NavbarLink href="#" title="Application" />
+      <Logo src={props.logo} />
+      { mapPropsToNavItems() }
     </NavbarContainer>
   )
+}
+
+Navbar.propTypes = {
+  logo: PropTypes.string.isRequired,
+  navItems: PropTypes.array.isRequired
 }
 
 export default Navbar;

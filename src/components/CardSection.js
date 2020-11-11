@@ -54,6 +54,7 @@ const CardSectionWrapper = styled.div`
     flex-wrap: wrap;
     width: 100%;
     margin-top: 2rem;
+    justify-content: center;
 `
 
 const Card = styled.div`
