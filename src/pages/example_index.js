@@ -68,8 +68,7 @@ const App = () => {
   const subtitle = 'BRUIN ENTREPRENEURS'
   const description = 'Connecting UCLA\'s best talent to the best startups in LA.'
   const buttonText = 'This is the date'
-  const startupFairDescription = "Startup Fair is a cool little thing that we do cuz we love startups."
-  const recruitersDescription = "hey recruiters plz hire me."
+  const startupLabsDescription = "Startup Fair is a cool little thing that we do cuz we love startups."
  
   const bulletPoints = [
     "Mentor-Mentee Pairings",
@@ -153,33 +152,26 @@ const App = () => {
           subtitleText={subtitle} 
           descriptionText={description} 
           buttonText={buttonText} 
-          titleColor="#f2f2f2"
-          subtitleColor="#f2f2f2"
-          buttonColor="#f39c12"
+          titleColor="#EE4C7D"
+          subtitleColor="#ED9CB5"
+          buttonColor="#EE4C7D"
           buttonTextColor="#EDEDEE"
         />
         <Element name="students" />
         <TextSection 
-          id="student" 
-          title="Students"
-          text={startupFairDescription} 
-          dividerColor="linear-gradient(90deg, transparent 0%, #f39c12 100%)" 
-        />        
-        <Element 
-          name="recruiters" 
-        />
-        <TextSection 
-          id="recruiter" 
-          title="Recruiters"
-          text={recruitersDescription} 
-          dividerColor="linear-gradient(90deg, transparent 0%, #f39c12 100%)" 
+          id="program" 
+          title="What is Startup Labs?"
+          text={startupLabsDescription} 
+          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
         />        
         <BulletPointSection 
           title="Program Details" 
           points={bulletPoints} 
           dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
         />
-        
+        <Element 
+          name="recruiters" 
+        />
         <CardSection 
           id="companies" 
           title="Notable Alumni" 
@@ -236,8 +228,7 @@ const BackgroundContainer = styled.div`
   padding-top: 376.18%;
   background-size: contain;
   background-repeat: no-repeat;
-  color: #f2f2f2;
-  // background-image: url(${backgroundImage});
+  background-image: url(${backgroundImage});
 `
 
 const ContentContainer = styled.div`
