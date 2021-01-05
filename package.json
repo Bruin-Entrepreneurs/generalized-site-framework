@@ -6,6 +6,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.24.80",
+    "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-styled-components": "^3.7.0",
     "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
