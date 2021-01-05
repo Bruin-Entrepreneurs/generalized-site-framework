@@ -76,7 +76,7 @@ const TitleContainer = styled.div`
 const TitleTextContainer = styled.div`
   font-size: 6rem;
   color: ${props => props.color};
-  font-family: 'Barlow Semi Condensed';
+  // font-family: 'Barlow Semi Condensed';
 `
 
 TitleTextContainer.propTypes = {
