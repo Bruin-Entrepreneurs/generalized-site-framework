@@ -234,55 +234,6 @@ const App = () => {
               textColor="black"
             />
         </OpaqueSection>
-{/* 
-
-        <TextSection 
-          id="recruiter" 
-          title="Recruiters"
-          text={recruitersDescription} 
-          dividerColor="linear-gradient(90deg, transparent 0%, #f39c12 100%)" 
-        />        
-        <BulletPointSection 
-          title="Program Details" 
-          points={bulletPoints} 
-          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
-        />
-        
-        <CardSection 
-          id="companies" 
-          title="Notable Alumni" 
-          cards={alumni}
-          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
-        />        
-        <ImageFlexboxSection 
-          title="Where Our Companies Go" 
-          height="20vh" width="50%" 
-          mobileHeight="12vh" 
-          mobileWidth="50%"
-          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
-          images={accelerators} 
-        />
-        <Element name="about" />        
-        <CardSection 
-          id="mentors" 
-          title="Mentors and VCs" 
-          cards={mentors}
-          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)" 
-        />
-        <Element 
-          name="partners" 
-        />
-        <ImageFlexboxSection 
-          id="partners" 
-          title="Partners" 
-          height="16vh" 
-          width="25%" 
-          mobileHeight="12vh" 
-          mobileWidth="50%"
-          dividerColor="linear-gradient(90deg, transparent 0%, rgba(238,76,125,1) 100%)"  
-          images={partners} 
-        /> */}
-        {/* <SectionBreak /> */}
         <Element name="contact" />
         <OpaqueSection>
           <FooterSection 
