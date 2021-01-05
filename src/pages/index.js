@@ -273,7 +273,6 @@ const ContentContainer = styled.div`
 `
 
 const Landing = styled.img`
-
 width: 80%;
 margin-left: 10%;
 margin-right: 10%;

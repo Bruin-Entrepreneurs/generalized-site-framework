@@ -6,8 +6,8 @@ import * as SectionComponents from './section-components/SectionComponents';
 
 const TextSection = (props) => {
     return (
-        <SectionComponents.SectionWrapper backgroundColor={props.backgroundColor}>
-            {/* <SectionComponents.SectionDivider dividerColor={props.dividerColor} /> */}
+        <SectionComponents.SectionWrapper >
+            <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
             <TitleDiv titleColor={props.titleColor}>
                 {props.title}
             </TitleDiv>
