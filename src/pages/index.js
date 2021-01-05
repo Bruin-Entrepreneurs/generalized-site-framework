@@ -260,7 +260,6 @@ const BackgroundContainer = styled.div`
   padding-top: 376.18%;
   background-size: cover;
   background-repeat: no-repeat;
-  // color: #f2f2f2;
   background-image: url(${backgroundImage});
 `
 
