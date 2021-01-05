@@ -10,6 +10,8 @@ export const SectionWrapper = styled.div`
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    // background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'inherit') };
+    // background-clip: content-box;
 `
 
 // create purple divider line

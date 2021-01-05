@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:wght@100;200&display=swap');
 @font-face {font-family: 'Barlow Semi Condensed', sans-serif;}
-p{font-family: 'Barlow Semi Condensed', sans-serif;}
+p{font-family: Verdana,Geneva,sans-serif;}
 
 html, body {
   height: 100%; 
   width: 100%;
   margin: 0;
-  font-family: 'Barlow Semi Condensed';
-  background: rgb(31, 136, 136);
+  font-family: Verdana,Geneva,sans-serif;
+  background: #FF357D;
 }
 
 /* I added these because I noticed gatsby added wrapper divs

@@ -79,7 +79,8 @@ const RowItemWrapper = styled.div`
     }
 `
 
-const InitiativeLogo = styled.img`    
+const InitiativeLogo = styled.img`  
+height: 100%;
 `
 
 //#EE4C7D;
