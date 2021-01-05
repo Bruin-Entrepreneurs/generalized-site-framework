@@ -9,11 +9,7 @@ import '../main.css'
 import backgroundImage from '../assets/background.png';
 import LandingPic from '../assets/landing.png';
 import Navbar from '../components/navbar/Navbar';
-// import TitleWithButton from '../components/TitleWithButton';
 import TextSection from '../components/TextSection';
-// import BulletPointSection from '../components/BulletPointSection';
-// import CardSection from '../components/CardSection';
-// import ImageFlexboxSection from '../components/ImageFlexboxSection';
 import FooterSection from '../components/FooterSection';
 
 
@@ -33,67 +29,12 @@ const App = () => {
     {text: "Recruiters", href: "recruiters", internal: true},    
     {text: "FAQ", href: 'faq', internal: true},
     {text: "Contact", href: 'contact', internal: true}
-    // {text: "Partners", href: "partners", internal: true},
-    // {text: "Application", href: "https://form.jotform.com/93287031393156", internal: false},
   ]
 
-
-  // const title = 'STARTUP FAIR LA';
-  // const subtitle = 'BRUIN ENTREPRENEURS';
-  // const description = 'Connecting UCLA\'s best talent to the best startups in LA.';
-  // const buttonText = 'This is the date';
+  
   const startupFairDescription = `Startup Fair is a career fair hosted by Bruin Entrepreneurs. This student-led entrepreneurship initiative is UCLA’s flagship startup recruiting event exclusively open to UCLA undergraduate students. This fair connects motivated, self-starter UCLA students with CA-based high-growth startup companies. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. `;
   const beDescription = `Bruin Entrepreneurs is UCLA’s premier student entrepreneurship organization. We encourage creativity and innovation on campus by supporting UCLA students at every stage in their journey as aspiring entrepreneurs and by putting on large and small scale events throughout the year. In addition to Startup Fair LA, we host engaging initiatives throughout the year including Startup Labs -- our student venture accelerator program -- and 1000 Pitches -- our annual pitch competition -- among others.`;
   const expectDescription = `You will have access to connect with high growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held virtually on Tikkl, and you can drop-in anytime between 10AM - 5PM PST. `;
-  // const recruitersDescription = "hey recruiters plz hire me."
- 
-  // const bulletPoints = [
-  //   "Mentor-Mentee Pairings",
-  //   "Fireside Chats",
-  //   "Virtual Workshops",
-  //   "VC Introductions",
-  //   "T1 Accelerator Prep",
-  //   "UCLA Alumni Network",
-  //   "Funding Opportunities"
-  // ];
-
-  // const alumni = [
-  //   {title: 'Duffl', subtitle: 'Connecting video game players with real life awards.', image: DufflPic, link: "https://playfull.com/"},
-  //   {title: 'Sike Insights', subtitle: 'Utilizing cutting edge AI and psychology research to bridge the gaps between individuals on remote teams.', image: SikePic, link: "https://sikeinsights.com/"},
-  //   {title: 'Charipay', subtitle: 'Developing a hyperlocalized platform on which students can purchase snacks and goods.', image: CharipayPic, link: "https://www.duffl.com/"},
-  //   {title: 'Playfull', subtitle: 'Building a more conducive platform for charitable actions.', image: PlayfullPic, link: "www.charipay.org"}
-  // ]
-
-  // const accelerators = [
-  //   YCPic,
-  //   StartupPic,
-  //   AndersonPic,
-  //   TechstarsPic
-  // ]
-
-  // const mentors = [
-  //   {title: 'Akiva Bamberger', subtitle: 'CEO of TTYL', image: Mentor1Pic},
-  //   {title: 'Cisco Arias', subtitle: 'SWE at SC', image: Mentor2Pic},
-  //   {title: 'Amira Polack', subtitle: 'Founder of Struct Club', image: Mentor3Pic},
-  //   {title: 'Anthony Lai', subtitle: 'CEO of TabBlaze', image: Mentor4Pic},
-  //   {title: 'Greg Blackman', subtitle: 'Co-founder of Media Scout', image: Mentor5Pic},
-  //   {title: 'Mark Kapczynski', subtitle: 'CMO of Gooten', image: Mentor6Pic},
-  //   {title: 'Matthew Arevalo', subtitle: 'Co-founder of Pinfinity', image: Mentor7Pic},
-  //   {title: 'Reyhaneh Fathieh', subtitle: 'Co-founder of Media Scout', image: Mentor8Pic},
-  //   {title: 'Theo Lee', subtitle: 'CEO of KPOP Foods', image: Mentor9Pic},
-  //   {title: 'David Meister', subtitle: '18 Ventures', image: Mentor10Pic},
-  //   {title: 'Thea Knobel', subtitle: 'Type One Ventures', image: Mentor11Pic},
-  //   {title: 'Sunny Singh', subtitle: 'Tech Coast Angels', image: Mentor12Pic},
-  //   {title: 'Gefen Skolnick', subtitle: 'Contrary Capital', image: Mentor13Pic},
-  //   {title: 'Anita Ilango', subtitle: 'Contrary Capital', image: Mentor14Pic},
-  // ]
-
-  // const partners = [
-  //   UCLAPic,
-  //   RingsPic,
-  //   StartupLogoPic,
-  //   BEPic     
-  // ]
 
   const contributors = [
     "Directed by Sarah Wilen",
@@ -113,6 +54,12 @@ const App = () => {
 
   return (
     <div>
+      <Helmet
+        link={[
+          { rel: 'shortcut icon', type: 'image/png', href: SFLogoPic },
+        ]}
+      />
+
       <Navbar 
           logo={BEPic}
           navItems={NavItems}
@@ -120,11 +67,6 @@ const App = () => {
           
         />
     <BackgroundContainer>
-      <Helmet
-        link={[
-          { rel: 'shortcut icon', type: 'image/png', href: SFLogoPic },
-        ]}
-      />
       <ContentContainer>
         
         <Landing src={LandingPic}/>
