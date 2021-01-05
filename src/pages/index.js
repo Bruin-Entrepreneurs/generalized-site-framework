@@ -16,38 +16,9 @@ import TextSection from '../components/TextSection';
 // import ImageFlexboxSection from '../components/ImageFlexboxSection';
 import FooterSection from '../components/FooterSection';
 
-// image assets for alumni
-import DufflPic from '../assets/alumni/duffl.png';
-import SikePic from '../assets/alumni/sike.png';
-import CharipayPic from '../assets/alumni/charipay.png';
-import PlayfullPic from '../assets/alumni/playfull.png';
 
-// image assets for accelerators
-import YCPic from '../assets/accelerator/yc.png';
-import StartupPic from '../assets/accelerator/startup_ucla.png';
-import AndersonPic from '../assets/accelerator/anderson.png';
-import TechstarsPic from '../assets/accelerator/techstars.png';
-
-// image assets for mentors
-import Mentor1Pic from '../assets/mentors/mentor1.png';
-import Mentor2Pic from '../assets/mentors/mentor2.png';
-import Mentor3Pic from '../assets/mentors/mentor3.png';
-import Mentor4Pic from '../assets/mentors/mentor4.png';
-import Mentor5Pic from '../assets/mentors/mentor5.png';
-import Mentor6Pic from '../assets/mentors/mentor6.png';
-import Mentor7Pic from '../assets/mentors/mentor7.png';
-import Mentor8Pic from '../assets/mentors/mentor8.png';
-import Mentor9Pic from '../assets/mentors/mentor9.png';
-import Mentor10Pic from '../assets/mentors/mentor10.png';
-import Mentor11Pic from '../assets/mentors/mentor11.png';
-import Mentor12Pic from '../assets/mentors/mentor12.png';
-import Mentor13Pic from '../assets/mentors/mentor13.png';
-import Mentor14Pic from '../assets/mentors/mentor14.png';
 
 // image assets for partners
-import UCLAPic from '../assets/partners/ucla.png';
-import RingsPic from '../assets/partners/rings.png';
-import StartupLogoPic from '../assets/partners/startup_ucla_logo.png';
 import BEPic from '../assets/partners/be.png';
 
 // SF logo asset
