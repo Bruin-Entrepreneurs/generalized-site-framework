@@ -102,6 +102,7 @@ const App = () => {
             title="What to Expect"
             text={expectDescription} 
             dividerColor="transparent" 
+            dividerPresent={false}
             titleColor="black"
             textColor="black"
           />
@@ -115,6 +116,7 @@ const App = () => {
               </ol>
             } 
             dividerColor="transparent" 
+            dividerPresent={false}
             titleColor="black"
             textColor="black"
           />
@@ -137,6 +139,7 @@ const App = () => {
             text={
               `Company attendance at Startup Fair LA this year will cost a flat fee of $350. The recruiter fee is to cover our event hosting platform’s maintenance fees. All recruiters will receive the same platinum tier perks from previous years!`
             } 
+            dividerPresent={false}
             dividerColor="transparent" 
             titleColor="black"
             textColor="black"
@@ -153,12 +156,13 @@ const App = () => {
                 <li>Social media features</li>
               </ul>
             } 
+            dividerPresent={false}
             dividerColor="transparent" 
             titleColor="black"
             textColor="black"
           />
           <div style={{width: "70%", marginLeft: "auto", marginRight: "auto", marginTop: "1rem", marginBottom: "1rem"}}>
-            <div style={{width: "90%", marginLeft: "auto", marginRight: "auto", lineHeight: "175%"}}>
+            <div style={{width: "90%", marginLeft: "auto", marginRight: "auto", lineHeight: "175%", paddingBottom: "1.5rem"}}>
             You can find our Recruiter Deck <a href="https://tinyurl.com/StartupFair21">here</a>!<br />
             Interested? Please reach out to us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>!
             </div>
@@ -176,6 +180,7 @@ const App = () => {
               text={
                 `Through Tikkl, we are able to create a completely virtual streamlined career fair experience for both recruiters and students, all from the comfort of your own home! `
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -186,6 +191,7 @@ const App = () => {
               text={
                 `As students, you will have the opportunity to interact and connect with different startups to discuss career and learning opportunities. We will also be providing a resume book of all the attendees to the startups, along with the relevant professional contact information.`
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -196,6 +202,7 @@ const App = () => {
               text={
                 `There will be numerous startups from various industries and backgrounds -- all of which you will be able to access through the Tikkl platform.`
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -206,6 +213,7 @@ const App = () => {
               text={
                 `You will need an account to participate in the event, which can be made in several easy steps. Furthermore, you will have to register for our event through here (hyperlink the sign-up forms)`
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -217,6 +225,7 @@ const App = () => {
               text={
                 `Please express your interest to startupfairla@gmail.com, we look forward to hearing from you and will send the registration details!`
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -229,6 +238,7 @@ const App = () => {
                   Please contact us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a> for more details!
                 </div>
               } 
+              dividerPresent={false}
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
@@ -295,8 +305,10 @@ margin-left: auto;
 margin-right: auto;
 `
 const SmallerSectionTitle = styled.div`
+margin-top: 2rem;
+margin-bottom: 1rem;
 color: #01349C;
-font-size: 2rem;
+font-size: 2.5rem;
 width: 80%;
 margin-left: auto;
 margin-right: auto;

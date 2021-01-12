@@ -7,7 +7,11 @@ import * as SectionComponents from './section-components/SectionComponents';
 const TextSection = (props) => {
     return (
         <SectionComponents.SectionWrapper >
-            <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
+            { props.dividerPresent ? 
+                <SectionComponents.SectionDivider dividerColor={props.dividerColor} />
+                :
+                null
+            }
             <TitleDiv titleColor={props.titleColor}>
                 {props.title}
             </TitleDiv>

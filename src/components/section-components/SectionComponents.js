@@ -18,7 +18,6 @@ height: 4vh;
 width: 50%;
 float: left;
 background: rgb(229,229,229);
-
 background: ${props => props.dividerColor};
 border-radius: 20px;
 margin-bottom: 1rem;
