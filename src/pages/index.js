@@ -47,6 +47,7 @@ const App = () => {
 
   const socials = [
     <div>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></div>,
+    <div>Facebook: <a href="https://www.facebook.com/startupfairla/">@startupfair.la</a></div>,
     <a href='https://www.linkedin.com/company/startup-fair-la/about/'>LinkedIn</a>
   ]
 
@@ -111,8 +112,14 @@ const App = () => {
             title="What to Prepare"
             text={
               <ol>
-                <li>Create a <a href={'https://www.tikkl.com/signup'}>Tikkl account</a></li>
-                <li>Prepare your Questions!</li>
+                <li>Sign up on <a href={'https://tinyurl.com/StartupFairLa/'}>Tikkl (3 min): tinyurl.com/StartupFairLa</a></li>
+                <li>Follow us for recruiter announcements (20 sec)!
+                  <ul>
+                    <li>Facebook: <a href="https://www.facebook.com/startupfairla/">@startupfair.la</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></li>
+                  </ul>
+                </li>
+                <li>Get excited! (timeless)</li>
               </ol>
             } 
             dividerColor="transparent" 
@@ -244,8 +251,9 @@ const App = () => {
               textColor="black"
             />
         </OpaqueSection>
+        <SectionBreak />
         <Element name="contact" />
-        <OpaqueSection>
+        <OpaqueFooterSection>
           <FooterSection 
             logo={SFLogoPic} 
             initiative="Startup Fair" 
@@ -254,7 +262,7 @@ const App = () => {
             socials={socials}
             titleTextColor="black"
           />
-        </OpaqueSection>
+        </OpaqueFooterSection>
       </ContentContainer>
     </BackgroundContainer>
     </div>
@@ -289,8 +297,14 @@ margin-right: 10%;
 `
 
 const OpaqueSection = styled.div`
-  background-color: rgba(255,255,255, 0.9);
+background-color: rgba(255,255,255, 0.9);
   height: auto;
+`
+
+const OpaqueFooterSection = styled.div`
+background-color: rgba(255,255,255, 0.9);
+display: flex;
+// height: 100%;
 `
 
 const SectionBreak = styled.div`
@@ -303,6 +317,7 @@ font-size: 3rem;
 width: 80%;
 margin-left: auto;
 margin-right: auto;
+font-weight: 900;
 `
 const SmallerSectionTitle = styled.div`
 margin-top: 2rem;

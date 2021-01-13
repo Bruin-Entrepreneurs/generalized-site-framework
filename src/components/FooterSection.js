@@ -47,17 +47,19 @@ FooterSection.propTypes = {
 }
 
 const Row = styled.div`
-    margin-top: 30vh;
+    padding-top: 10vh;
     height: 20vh;
     width: 100%;
     display: flex;
     flex-direction: row;
 
     @media screen and (max-device-width: 480px) and (orientation:portrait) {
+        height: auto;
         flex-direction: column;
     }
 
     @media(max-width: 1000px) {
+        height: auto;
         flex-direction: column;
     }
 `
