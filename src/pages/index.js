@@ -59,7 +59,9 @@ const App = () => {
         link={[
           { rel: 'shortcut icon', type: 'image/png', href: SFLogoPic },
         ]}
-      />
+      >
+        <title>Startup Fair LA</title>
+      </Helmet>
 
       <Navbar 
           logo={BEPic}
