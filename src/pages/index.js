@@ -1,9 +1,9 @@
-import React from "react"
-import styled from 'styled-components'
+import React from "react";
+import styled from 'styled-components';
 import { Element } from 'react-scroll';
 import Helmet from 'react-helmet';
 
-import '../main.css'
+import '../main.css';
 
 
 import backgroundImage from '../assets/background.png';
@@ -29,7 +29,7 @@ const App = () => {
     {text: "Recruiters", href: "recruiters", internal: true},    
     {text: "FAQ", href: 'faq', internal: true},
     {text: "Contact", href: 'contact', internal: true}
-  ]
+  ];
 
   
   const startupFairDescription = `Startup Fair is a career fair hosted by Bruin Entrepreneurs. This student-led entrepreneurship initiative is UCLA’s flagship startup recruiting event exclusively open to UCLA undergraduate students. This fair connects motivated, self-starter UCLA students with CA-based high-growth startup companies. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. `;
@@ -39,17 +39,17 @@ const App = () => {
   const contributors = [
     "Directed by Sarah Wilen",
     "Designed by Sela Serafin",
-  ]
+  ];
 
   const contacts = [
     <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>
-  ]
+  ];
 
   const socials = [
     <div>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></div>,
     <div>Facebook: <a href="https://www.facebook.com/startupfairla/">@startupfair.la</a></div>,
     <a href='https://www.linkedin.com/company/startup-fair-la/about/'>LinkedIn</a>
-  ]
+  ];
 
   
 
@@ -202,7 +202,7 @@ const App = () => {
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
-            />
+p            />
             <TextSection
               id="startups" 
               title="What kind of startups will be there?"
@@ -288,37 +288,38 @@ const ContentContainer = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-`
+`;
 
 const Landing = styled.img`
 width: 80%;
 margin-left: 10%;
 margin-right: 10%;
-`
+`;
 
 const OpaqueSection = styled.div`
 background-color: rgba(255,255,255, 0.9);
   height: auto;
-`
+`;
 
 const OpaqueFooterSection = styled.div`
 background-color: rgba(255,255,255, 0.9);
 display: flex;
 // height: 100%;
-`
+`;
 
 const SectionBreak = styled.div`
   height: 10vh;
-`
+`;
 
 const BigSectionTitle = styled.div`
 color: #01349C;
-font-size: 3rem;
+font-size: 3.5rem;
 width: 80%;
 margin-left: auto;
 margin-right: auto;
-font-weight: 900;
-`
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+`;
 const SmallerSectionTitle = styled.div`
 margin-top: 2rem;
 margin-bottom: 1rem;
@@ -327,6 +328,6 @@ font-size: 2.5rem;
 width: 80%;
 margin-left: auto;
 margin-right: auto;
-`
+`;
 
 export default App;
