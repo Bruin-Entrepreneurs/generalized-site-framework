@@ -32,23 +32,23 @@ const App = () => {
   ];
 
   
-  const startupFairDescription = `Startup Fair is a career fair hosted by Bruin Entrepreneurs. This student-led entrepreneurship initiative is UCLA’s flagship startup recruiting event exclusively open to UCLA undergraduate students. This fair connects motivated, self-starter UCLA students with CA-based high-growth startup companies. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. `;
+  const startupFairDescription = `Startup Fair LA is a career fair specific to startups that either are located within Los Angeles or the surrounding area. This year, the event will be hosted by Bruin Entrepreneurs & Sigma Eta Pi, two of UCLA’s premiere entrepreneurship organizations on campus. This student-led entrepreneurship initiative is UCLA’s flagship startup recruiting event open to UCLA undergraduate and graduate students. This fair connects motivated, self-starter UCLA students with high-growth startup companies attending the event. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions.`;
   const beDescription = `Bruin Entrepreneurs is UCLA’s premier student entrepreneurship organization. We encourage creativity and innovation on campus by supporting UCLA students at every stage in their journey as aspiring entrepreneurs and by putting on large and small scale events throughout the year. In addition to Startup Fair LA, we host engaging initiatives throughout the year including Startup Labs -- our student venture accelerator program -- and 1000 Pitches -- our annual pitch competition -- among others.`;
-  const expectDescription = `You will have access to connect with high growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held virtually on Tikkl, and you can drop-in anytime between 10AM - 5PM PST. `;
+  const expectDescription = `Students will have access to connect with high growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held in person from 5 pm to 8 pm PST on Friday, February 4, 2022 at UCLA’s Grand Ackerman Ballroom. Students can drop-in anytime throughout the duration of the event. Masks, proof of an updated symptom monitoring survey, and a form of UCLA ID will be required upon entry.`;
 
   const contributors = [
-    "Directed by Sarah Wilen",
+    "Directed by Scott Davidson Jr",
     "Designed by Sela Serafin",
   ];
 
   const contacts = [
-    <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>
+    <a href="mailto:contact@startupfairla.com">contact@startupfairla.com</a>
   ];
 
   const socials = [
-    <div>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></div>,
     <div>Facebook: <a href="https://www.facebook.com/startupfairla/">@startupfair.la</a></div>,
-    <a href='https://www.linkedin.com/company/startup-fair-la/about/'>LinkedIn</a>
+    <div>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></div>,
+    <div>LinkedIn: <a href="https://www.linkedin.com/company/startup-fair-la/about/">@Startup Fair LA</a></div>
   ];
 
   
@@ -111,17 +111,18 @@ const App = () => {
           />
           <TextSection
             id="prepare" 
-            title="What to Prepare"
+            title="How to Prepare"
             text={
               <ol>
-                <li>Sign up on <a href={'https://tinyurl.com/StartupFairLa/'}>Tikkl (3 min): tinyurl.com/StartupFairLa</a></li>
-                <li>Follow us for recruiter announcements (20 sec)!
+                <li>Sign up through the registration form linked <a href={'https://forms.gle/8nACfZ2q5CJr1kL19'}>here</a>.</li>
+                <li>Follow us for recruiter announcements and event updates!
                   <ul>
                     <li>Facebook: <a href="https://www.facebook.com/startupfairla/">@startupfair.la</a></li>
                     <li>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/company/startup-fair-la/about/">@Startup Fair LA</a></li>
                   </ul>
                 </li>
-                <li>Get excited! (timeless)</li>
+                <li>Get excited!</li>
               </ol>
             } 
             dividerColor="transparent" 
@@ -146,14 +147,14 @@ const App = () => {
             id="spon-breakdown" 
             title="Sponsorship Breakdown"
             text={
-              `Company attendance at Startup Fair LA this year will cost a flat fee of $350. The recruiter fee is to cover our event hosting platform’s maintenance fees. All recruiters will receive the same platinum tier perks from previous years!`
+              `This year, the price of registration for Startup Fair LA is a selection of one of four sponsorship tiers offered for this event. These tiers are designed to increase the amount of exposure a sponsor will receive prior to and during the fair to expand the size of potential employees/interns a company connects with. The higher ranking a tier, the more exposure and marketing an attending startup will receive for this event.`
             } 
             dividerPresent={false}
             dividerColor="transparent" 
             titleColor="black"
             textColor="black"
           />
-          <TextSection
+          {/* <TextSection
             id="plat-benefits" 
             title="Platinum Tier Benefits"
             text={
@@ -169,11 +170,13 @@ const App = () => {
             dividerColor="transparent" 
             titleColor="black"
             textColor="black"
-          />
+          /> */}
           <div style={{width: "70%", marginLeft: "auto", marginRight: "auto", marginTop: "1rem", marginBottom: "1rem"}}>
             <div style={{width: "90%", marginLeft: "auto", marginRight: "auto", lineHeight: "175%", paddingBottom: "1.5rem"}}>
-            You can find our Recruiter Deck <a href="https://tinyurl.com/StartupFair21">here</a>!<br />
-            Interested? Please reach out to us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>!
+            The types of sponsorship tiers and what they entail is listed in our <a href="https://drive.google.com/file/d/10qWUWDC3hitBwar0AbMfi5_NLNQBuF47/view?usp=sharing">Startup Fair LA 2022 Sponsorship Brochure</a>!
+            <br />
+            <br />
+            Interested or have questions? Please reach out to us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>!
             </div>
           </div>
         </OpaqueSection>
@@ -187,7 +190,7 @@ const App = () => {
               id="different" 
               title="What's different this year?"
               text={
-                `Through Tikkl, we are able to create a completely virtual streamlined career fair experience for both recruiters and students, all from the comfort of your own home! `
+                `This year, Startup Fair LA will be in person at UCLA’s Grand Ackerman Ballroom. Therefore, masks, proof of updated symptom monitoring surveys, and a form of UCLA ID will be required to enter the fair.`
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -198,7 +201,7 @@ const App = () => {
               id="benefits" 
               title="What are the benefits?"
               text={
-                `As students, you will have the opportunity to interact and connect with different startups to discuss career and learning opportunities. We will also be providing a resume book of all the attendees to the startups, along with the relevant professional contact information.`
+                `As students, you will have the opportunity to interact and connect with different startups to discuss career and learning opportunities. We will also be providing a resume book of all the attendees to a majority of the startups and will send out relevant professional contact information at the conclusion of the event.`
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -209,7 +212,7 @@ p            />
               id="startups" 
               title="What kind of startups will be there?"
               text={
-                `There will be numerous startups from various industries and backgrounds -- all of which you will be able to access through the Tikkl platform.`
+                `There will be numerous startups from various industries and backgrounds – a list of the attending companies with their descriptions will be released prior to the day of the event.`
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -217,10 +220,14 @@ p            />
               textColor="black"
             />
             <TextSection
-              id="tikkl" 
-              title="How to use Tikkl?"
+              id="sign-up" 
+              title="How do I sign up?"
               text={
-                `You will need an account to participate in the event, which can be made in several easy steps. Furthermore, you will have to register for our event through here (hyperlink the sign-up forms)`
+                <div>
+                  Sign up for our event through the <a href="https://forms.gle/8nACfZ2q5CJr1kL19">Startup Fair LA 2022 Student Registration Form</a>. Not only is it available on our website, but it will be linked on both Bruin Entrepreneurs’ and Sigma Eta Pi’s social media accounts.
+
+                  Please contact us at <a href="mailto:contact@startupfairla.com"> contact@startupfairla.com</a> for more details!
+                </div>
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -232,7 +239,7 @@ p            />
               id="register" 
               title="How do I register?"
               text={
-                `Please express your interest to startupfairla@gmail.com, we look forward to hearing from you and will send the registration details!`
+                `Please express your interest to contact@startupfairla.com, we look forward to hearing from you and will send the registration details!`
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -244,7 +251,7 @@ p            />
               title="How do we direct our payments?"
               text={
                 <div>
-                  Please contact us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a> for more details!
+                  Please contact us at <a href="mailto:contact@startupfairla.com"> contact@startupfairla.com </a> for more details!
                 </div>
               } 
               dividerPresent={false}
@@ -258,7 +265,7 @@ p            />
         <OpaqueFooterSection>
           <FooterSection 
             logo={SFLogoPic} 
-            initiative="Startup Fair" 
+            initiative="Startup Fair LA" 
             contributors={contributors} 
             contacts={contacts} 
             socials={socials}
