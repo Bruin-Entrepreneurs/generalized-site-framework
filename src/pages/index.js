@@ -34,7 +34,11 @@ const App = () => {
   const startupFairDescription = `Startup Fair LA is a career fair connecting the UCLA community to startups in the Los Angeles area. Startup Fair LA was last held on January 29, 2021, with 37 startups and 300+ students coming together for our 8th annual recruiting event. This year, the event will be hosted by Bruin Entrepreneurs & Sigma Eta Pi, two of the esteemed entrepreneurship organizations on campus. This student-led initiative is UCLA’s flagship startup recruiting event open to UCLA undergraduate and graduate students. This fair connects motivated, self-starter UCLA students with high-growth startup companies. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. `;
   const beDescription = `Bruin Entrepreneurs is UCLA’s premier student entrepreneurship organization. We encourage creativity and innovation on campus by supporting UCLA students at every stage in their journey as aspiring entrepreneurs and by hosting large and small-scale events throughout the year. In addition to Startup Fair LA, we host engaging initiatives throughout the year, including Startup Labs -- our student venture accelerator program -- and 1000 Pitches -- our annual pitch competition -- among others.
   `;
-  const expectDescription = `Students will have access to connect with high-growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held virtually from 5 pm to 8 pm PST on Friday, February 4, 2022. Students can join anytime throughout the duration of the event.`;
+  const expectDescription = [
+    <div>
+      Students will have access to connect with high-growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held virtually via Zoom from 5 pm to 8 pm PST on Friday, February 4, 2022. Students can join anytime throughout the duration of the event. <b>Zoom links will be sent out to the emails students used when registering for the event at 1 pm PST the day of the event.</b>
+    </div>
+  ];
 
   const contributors = [
     "Directed by Scott Davidson Jr",
