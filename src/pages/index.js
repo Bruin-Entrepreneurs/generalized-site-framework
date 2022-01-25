@@ -31,10 +31,10 @@ const App = () => {
     {text: "Contact", href: 'contact', internal: true}
   ];
 
-  
-  const startupFairDescription = `Startup Fair LA is a career fair specific to startups that either are located within Los Angeles or the surrounding area. This year, the event will be hosted by Bruin Entrepreneurs & Sigma Eta Pi, two of UCLA’s premiere entrepreneurship organizations on campus. This student-led entrepreneurship initiative is UCLA’s flagship startup recruiting event open to UCLA undergraduate and graduate students. This fair connects motivated, self-starter UCLA students with high-growth startup companies attending the event. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions.`;
-  const beDescription = `Bruin Entrepreneurs is UCLA’s premier student entrepreneurship organization. We encourage creativity and innovation on campus by supporting UCLA students at every stage in their journey as aspiring entrepreneurs and by putting on large and small scale events throughout the year. In addition to Startup Fair LA, we host engaging initiatives throughout the year including Startup Labs -- our student venture accelerator program -- and 1000 Pitches -- our annual pitch competition -- among others.`;
-  const expectDescription = `Students will have access to connect with high growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held in person from 5 pm to 8 pm PST on Friday, February 4, 2022 at UCLA’s Grand Ackerman Ballroom. Students can drop-in anytime throughout the duration of the event. Masks, proof of an updated symptom monitoring survey, and a form of UCLA ID will be required upon entry.`;
+  const startupFairDescription = `Startup Fair LA is a career fair connecting the UCLA community to startups in the Los Angeles area. Startup Fair LA was last held on January 29, 2021, with 37 startups and 300+ students coming together for our 8th annual recruiting event. This year, the event will be hosted by Bruin Entrepreneurs & Sigma Eta Pi, two of the esteemed entrepreneurship organizations on campus. This student-led initiative is UCLA’s flagship startup recruiting event open to UCLA undergraduate and graduate students. This fair connects motivated, self-starter UCLA students with high-growth startup companies. This is an excellent opportunity for talented students and impactful companies alike to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. `;
+  const beDescription = `Bruin Entrepreneurs is UCLA’s premier student entrepreneurship organization. We encourage creativity and innovation on campus by supporting UCLA students at every stage in their journey as aspiring entrepreneurs and by hosting large and small-scale events throughout the year. In addition to Startup Fair LA, we host engaging initiatives throughout the year, including Startup Labs -- our student venture accelerator program -- and 1000 Pitches -- our annual pitch competition -- among others.
+  `;
+  const expectDescription = `Students will have access to connect with high-growth startups in various industries to discuss existing opportunities and create new ones for potential full-time, part-time, or internship positions. The event will be held virtually from 5 pm to 8 pm PST on Friday, February 4, 2022. Students can join anytime throughout the duration of the event.`;
 
   const contributors = [
     "Directed by Scott Davidson Jr",
@@ -50,8 +50,6 @@ const App = () => {
     <div>Instagram: <a href="https://www.instagram.com/startupfair.la/">@startupfair.la</a></div>,
     <div>LinkedIn: <a href="https://www.linkedin.com/company/startup-fair-la/about/">@Startup Fair LA</a></div>
   ];
-
-  
 
   return (
     <div>
@@ -173,7 +171,7 @@ const App = () => {
           /> */}
           <div style={{width: "70%", marginLeft: "auto", marginRight: "auto", marginTop: "1rem", marginBottom: "1rem"}}>
             <div style={{width: "90%", marginLeft: "auto", marginRight: "auto", lineHeight: "175%", paddingBottom: "1.5rem"}}>
-            The types of sponsorship tiers and what they entail is listed in our <a href="https://drive.google.com/file/d/10qWUWDC3hitBwar0AbMfi5_NLNQBuF47/view?usp=sharing">Startup Fair LA 2022 Sponsorship Brochure</a>!
+            The types of sponsorship tiers and what they entail is listed in our <a href="https://drive.google.com/file/d/1o-Jl99fj7MqYtNsxoudvIXXwhSsxKths/view">Startup Fair LA 2022 Sponsorship Brochure</a>!
             <br />
             <br />
             Interested or have questions? Please reach out to us at <a href="mailto:startupfairla@gmail.com">startupfairla@gmail.com</a>!
@@ -187,21 +185,10 @@ const App = () => {
           <BigSectionTitle>FAQs</BigSectionTitle>
           <SmallerSectionTitle>For Students:</SmallerSectionTitle>
             <TextSection
-              id="different" 
-              title="What's different this year?"
-              text={
-                `This year, Startup Fair LA will be in person at UCLA’s Grand Ackerman Ballroom. Therefore, masks, proof of updated symptom monitoring surveys, and a form of UCLA ID will be required to enter the fair.`
-              } 
-              dividerPresent={false}
-              dividerColor="transparent" 
-              titleColor="black"
-              textColor="black"
-            />
-            <TextSection
               id="benefits" 
               title="What are the benefits?"
               text={
-                `As students, you will have the opportunity to interact and connect with different startups to discuss career and learning opportunities. We will also be providing a resume book of all the attendees to a majority of the startups and will send out relevant professional contact information at the conclusion of the event.`
+                `As students, you will have the opportunity to interact and connect with different startups to discuss career and learning opportunities. We will also provide a resume book of all the attendees to a majority of the startups and send out relevant professional contact information at the conclusion of the event.`
               } 
               dividerPresent={false}
               dividerColor="transparent" 
@@ -224,9 +211,7 @@ p            />
               title="How do I sign up?"
               text={
                 <div>
-                  Sign up for our event through the <a href="https://forms.gle/8nACfZ2q5CJr1kL19">Startup Fair LA 2022 Student Registration Form</a>. Not only is it available on our website, but it will be linked on both Bruin Entrepreneurs’ and Sigma Eta Pi’s social media accounts.
-
-                  Please contact us at <a href="mailto:contact@startupfairla.com"> contact@startupfairla.com</a> for more details!
+                  Sign up for our event through the <a href="https://forms.gle/8nACfZ2q5CJr1kL19">Startup Fair LA 2022 Student Registration Form</a>. Not only is it available on our website, but it will be linked on both Bruin Entrepreneurs’ and Sigma Eta Pi’s social media accounts. Please contact us at <a href="mailto:contact@startupfairla.com">contact@startupfairla.com</a> for more details!
                 </div>
               } 
               dividerPresent={false}
@@ -251,7 +236,7 @@ p            />
               title="How do we direct our payments?"
               text={
                 <div>
-                  Please contact us at <a href="mailto:contact@startupfairla.com"> contact@startupfairla.com </a> for more details!
+                  Please contact us at <a href="mailto:contact@startupfairla.com">contact@startupfairla.com</a> for more details!
                 </div>
               } 
               dividerPresent={false}
