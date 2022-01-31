@@ -12,10 +12,13 @@ import Navbar from '../components/navbar/Navbar';
 import TextSection from '../components/TextSection';
 import FooterSection from '../components/FooterSection';
 
-
+// image assets for sponsors
+import GoldSponsors from '../assets/gold-sponsors-logo.png';
+import StandardSponsors from '../assets/standard-sponsors-logo.png';
 
 // image assets for partners
 import BEPic from '../assets/partners/be.png';
+
 
 // SF logo asset
 import SFLogoPic from '../assets/sf-logo.png';
@@ -75,7 +78,49 @@ const App = () => {
       <ContentContainer>
         
         <Landing src={LandingPic}/>
+
+        <OpaqueSection>
+          <Element name="sponsors" />
+          {/* <SponsorsTitle>Sponsor</SponsorsTitle> */}
+          <BigSectionTitle>Sponsor</BigSectionTitle>
+          <TextSection 
+            id="sponsor-gold" 
+            title="Gold Sponsors"
+            text={
+              <div>
+                <img src={GoldSponsors}
+                  style={{
+                    width: "100%"
+                  }}
+                alt="Gold Sponsors"/>
+              </div>
+            } 
+            dividerColor="transparent" 
+            titleColor="black"
+            textColor="black"
+          />
+          <TextSection 
+            id="sponsor-standard" 
+            title="Standard Sponsors"
+            text={
+              <div>
+                <img src={StandardSponsors}
+                  style={{
+                    width: "100%"
+                  }}
+                alt="Standard Sponsors"/>
+              </div>
+            } 
+            dividerColor="transparent" 
+            titleColor="black"
+            textColor="black"
+          />      
+        </OpaqueSection>
         
+        <SectionBreak />
+        <Element 
+          name="about" 
+        />
         <OpaqueSection>
           <Element name="about-us" /> 
           <BigSectionTitle>About Us</BigSectionTitle>
@@ -198,7 +243,7 @@ const App = () => {
               dividerColor="transparent" 
               titleColor="black"
               textColor="black"
-p            />
+            />
             <TextSection
               id="startups" 
               title="What kind of startups will be there?"
@@ -309,7 +354,20 @@ const SectionBreak = styled.div`
   height: 10vh;
 `;
 
+const SponsorsTitle = styled.div`
+text-align: center;
+line-height: 200%;
+color: #01349C;
+font-size: 3.5rem;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+`;
+
 const BigSectionTitle = styled.div`
+line-height: 200%;
 color: #01349C;
 font-size: 3.5rem;
 width: 80%;
