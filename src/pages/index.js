@@ -14,7 +14,7 @@ import FooterSection from '../components/FooterSection';
 
 // image assets for sponsors
 import GoldSponsors from '../assets/gold-sponsors-logo.png';
-import StandardSponsors from '../assets/standard-sponsors-logo.png';
+import SilverSponsors from '../assets/silver-sponsors-logo.png';
 
 // image assets for partners
 import BEPic from '../assets/partners/be.png';
@@ -79,10 +79,19 @@ const App = () => {
         
         <Landing src={LandingPic}/>
 
+        <Element 
+          name="attendee"
+        />
+        <OpaqueSection>
+          <BigSectionTitle style={{fontSize: "4rem"}}>
+            <a href="https://drive.google.com/drive/folders/1foUYGuh1cZU1ogXeo8P4K8rG1ja8YqA8">Startup Fair LA Attendee Materials (includes full list of 30+ companies)</a>
+          </BigSectionTitle>
+        </OpaqueSection>
+
+        <SectionBreak />
         <OpaqueSection>
           <Element name="sponsors" />
-          {/* <SponsorsTitle>Sponsor</SponsorsTitle> */}
-          <BigSectionTitle>Sponsor</BigSectionTitle>
+          <BigSectionTitle>Sponsors</BigSectionTitle>
           <TextSection 
             id="sponsor-gold" 
             title="Gold Sponsors"
@@ -100,23 +109,24 @@ const App = () => {
             textColor="black"
           />
           <TextSection 
-            id="sponsor-standard" 
-            title="Standard Sponsors"
+            id="sponsor-silver" 
+            title="Silver Sponsors"
             text={
               <div>
-                <img src={StandardSponsors}
+                <img src={SilverSponsors}
                   style={{
                     width: "100%"
                   }}
-                alt="Standard Sponsors"/>
+                alt="Silver Sponsors"/>
               </div>
             } 
             dividerColor="transparent" 
             titleColor="black"
             textColor="black"
-          />      
+          />
         </OpaqueSection>
-        
+
+
         <SectionBreak />
         <Element 
           name="about" 
